@@ -1,11 +1,43 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 export default function About() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
   return (
-    <section id="hakkimizda" className="py-24 bg-white relative overflow-hidden">
+    <section
+      id="hakkimizda"
+      className="py-24 bg-white relative overflow-hidden"
+      ref={sectionRef}
+    >
       <div className="w-full max-w-7xl px-6 mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Metin */}
-        <div>
+        <div
+          className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
+            }`}
+        >
           <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-brand">
             CeranCo. ile Tanış
           </h2>
@@ -20,7 +52,10 @@ export default function About() {
         </div>
 
         {/* Görsel */}
-        <div>
+        <div
+          className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+            }`}
+        >
           <Image
             src="/assets/images/hakkinda.png"
             alt="CeranCo. Hakkında"

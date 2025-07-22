@@ -1,7 +1,35 @@
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: 'Gizlilik Politikası | CeranCo',
-  description: 'Gizliliğiniz bizim için önemlidir. Verilerinizin nasıl işlendiğini öğrenin.',
+  description: 'CeranCo olarak kişisel verilerinizi gizli tutmak ve güvenliğini sağlamak önceliğimizdir. Gizlilik politikamızı inceleyin.',
+  alternates: {
+    canonical: 'https://ceranco.com.tr/gizlilik-politikasi',
+  },
+  openGraph: {
+    title: 'Gizlilik Politikası | CeranCo',
+    description: 'Kişisel verilerinizin gizliliği ve güvenliği bizim için önceliklidir. Detaylı gizlilik politikamızı inceleyin.',
+    url: 'https://ceranco.com.tr/gizlilik-politikasi',
+    type: 'article',
+    siteName: 'CeranCo',
+    images: [
+      {
+        url: 'https://ceranco.com.tr/assets/og-image.jpg', // ✅ Absolute path
+        width: 1200,
+        height: 630,
+        alt: 'CeranCo Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gizlilik Politikası | CeranCo',
+    description: 'Veri güvenliği ve gizliliğe verdiğimiz önemi inceleyin.',
+    images: ['https://ceranco.com.tr/assets/images/logo.png'],
+    creator: '@ceranco.tr',
+  },
 };
+
 
 export default function GizlilikPage() {
   return (

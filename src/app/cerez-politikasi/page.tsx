@@ -1,7 +1,34 @@
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Çerez Politikası | CeranCo',
   description: 'Sitemizde kullanılan çerezler hakkında detaylı bilgi alın.',
+  alternates: {
+    canonical: 'https://ceranco.com.tr/cerez-politikasi',
+  },
+  openGraph: {
+    title: 'Çerez Politikası | CeranCo',
+    description: 'Ziyaret deneyiminizi iyileştirmek için kullandığımız çerezler hakkında bilgi alın.',
+    url: 'https://ceranco.com.tr/cerez-politikasi',
+    type: 'article',
+    siteName: 'CeranCo',
+    images: [
+      {
+        url: 'https://ceranco.com.tr/assets/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'CeranCo Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Çerez Politikası | CeranCo',
+    description: 'Ziyaret deneyiminizi iyileştirmek için kullandığımız çerezler hakkında bilgi alın.',
+    images: ['https://ceranco.com.tr/assets/images/logo.png'],
+    site: '@ceranco.tr',
+    creator: '@ceranco.tr',
+  },
 };
+
 
 export default function CerezPage() {
   return (

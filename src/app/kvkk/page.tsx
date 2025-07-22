@@ -1,8 +1,35 @@
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: 'KVKK Aydınlatma Metni | CeranCo',
   description: 'Kişisel verilerinizin nasıl işlendiğini ve saklandığını öğrenin.',
+  alternates: {
+    canonical: 'https://ceranco.com.tr/kvkk',
+  },
+  openGraph: {
+    title: 'KVKK Aydınlatma Metni | CeranCo',
+    description: 'Kişisel verilerinizin gizliliği ve güvenliği bizim için önceliklidir.',
+    url: 'https://ceranco.com.tr/kvkk',
+    type: 'article',
+    siteName: 'CeranCo',
+    images: [
+      {
+        url: 'https://ceranco.com.tr/assets/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'CeranCo Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KVKK Aydınlatma Metni | CeranCo',
+    description: 'Kişisel verilerinizin gizliliği ve güvenliği bizim için önceliklidir.',
+    images: ['https://ceranco.com.tr/assets/images/logo.png'],
+    site: '@ceranco.tr',
+    creator: '@ceranco.tr',
+  },
 };
-
 export default function KVKKPage() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-24 text-gray-800">

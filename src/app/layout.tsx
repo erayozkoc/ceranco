@@ -15,21 +15,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'CeranCo.',
   description: 'Oversize giyim tarzının öncüsü CeranCo. Cesur ol, kalıpları yık, tarzını konuştur.',
-  keywords: ['oversize tişört', 'ceranco', 'oversize giyim', 'rahat tişört', 'erkek moda', 'kadın oversize'],
-  openGraph: {
-    title: 'CeranCo. - Oversize Giyim',
-    description: 'Kalıpları yıkan oversize tasarımlar. Cesur ol, rahat hisset, tarzını yansıt.',
-    url: 'https://ceranco.com.tr',
-    type: 'website',
-    images: [
-      {
-        url: '/assets/images/logo.svg',
-        width: 1200,
-        height: 630,
-        alt: 'CeranCo. Logo',
-      },
-    ],
-  },
   icons: {
     icon: [
       { url: '/assets/favicons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },

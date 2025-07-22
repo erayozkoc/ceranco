@@ -79,7 +79,7 @@ export default function Header() {
 
           {/* Sosyal Medya */}
           <div className="mt-8 pt-8 border-t border-gray-200">
-            <h4 className="text-sm uppercase tracking-wide text-gray-400 text-center mb-3">Bizi Takip Et</h4>
+            <p className="text-sm uppercase tracking-wide text-gray-400 text-center mb-3">Bizi Takip Et</p>
             <div className="flex justify-center gap-4 text-white">
               <a
                 href="https://instagram.com/ceranco"
