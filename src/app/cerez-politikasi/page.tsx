@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+
 export const metadata: Metadata = {
   title: 'Çerez Politikası | CeranCo',
   description: 'Sitemizde kullanılan çerezler hakkında detaylı bilgi alın.',

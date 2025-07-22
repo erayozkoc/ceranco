@@ -1,13 +1,15 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, } from 'react';
 import Image from 'next/image';
 
 export default function About() {
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const target = sectionRef.current as HTMLDivElement | null;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -17,12 +19,10 @@ export default function About() {
       { threshold: 0.3 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    if (target) observer.observe(target);
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (target) observer.unobserve(target);
     };
   }, []);
 
@@ -68,3 +68,7 @@ export default function About() {
     </section>
   );
 }
+function setIsVisible(arg0: boolean) {
+  throw new Error('Function not implemented.');
+}
+
