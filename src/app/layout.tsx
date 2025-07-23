@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     apple: '/assets/favicons/apple-touch-icon.png',
   },
   manifest: '/assets/favicons/site.webmanifest',
+  robots: 'index, follow',
 };
 
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="alternate" hrefLang="tr" href="https://ceranco.com.tr/" />
       </head>
       <body className={`${poppins.className} overflow-x-hidden bg-brand`}>
         <Header />

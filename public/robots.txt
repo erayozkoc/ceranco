@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ceranco.com.tr
+
+# Sitemaps
+Sitemap: https://ceranco.com.tr/sitemap.xml
