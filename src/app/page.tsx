@@ -3,6 +3,7 @@ import Collection from "./components/home/Collection";
 import About from "./components/home/About";
 import Subscriber from "./components/home/Subscriber";
 import { Metadata } from "next";
+import StructuredDataHome from "./components/home/StructuredDataHome";
 
 export const metadata: Metadata = {
   title: 'CeranCo | Oversize Giyim',
@@ -38,14 +39,17 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow">
-        <HeroBanner />
-        <Collection />
-        <About />
-        <Subscriber />
-      </main>
+    <>
+      <StructuredDataHome />
+      <div className="min-h-screen flex flex-col">
+        <main className="flex-grow">
+          <HeroBanner />
+          <Collection />
+          <About />
+          <Subscriber />
+        </main>
 
-    </div>
+      </div>
+    </>
   );
 }
