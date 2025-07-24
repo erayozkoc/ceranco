@@ -32,19 +32,42 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <html lang="tr" suppressHydrationWarning>
-        <body className={`${poppins.className} overflow-x-hidden bg-brand`}>
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV8JQQ7V"
-            height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
-          <OrganizationStructuredData />
-          <Header />
-          {children}
-          <WhatsAppButton />
-          <Footer />
+    <html lang="tr" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+        <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon" />
+        <link rel="icon" href="/assets/favicons/favicon-96x96.png" sizes="96x96" type="image/png" />
+        <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+        <link rel="alternate" hrefLang="tr" href="https://ceranco.com.tr/" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MV8JQQ7V');`,
+          }}
+        />
+      </head>
 
-        </body>
-      </html>
-    </>
+      <body className={`${poppins.className} overflow-x-hidden bg-brand`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MV8JQQ7V"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+        <OrganizationStructuredData />
+        <Header />
+        {children}
+        <WhatsAppButton />
+        <Footer />
+      </body>
+    </html>
   );
 }
