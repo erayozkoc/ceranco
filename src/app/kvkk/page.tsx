@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     title: 'KVKK Aydınlatma Metni | CeranCo',
     description: 'Kişisel verilerinizin gizliliği ve güvenliği bizim için önceliklidir.',
     images: ['https://ceranco.com.tr/assets/images/logo.png'],
-    site: '@ceranco.tr',
-    creator: '@ceranco.tr',
+    site: '@cerancotr',
+    creator: '@cerancotr',
   },
 };
 export default function KVKKPage() {

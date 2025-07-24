@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     title: 'Çerez Politikası | CeranCo',
     description: 'Ziyaret deneyiminizi iyileştirmek için kullandığımız çerezler hakkında bilgi alın.',
     images: ['https://ceranco.com.tr/assets/images/logo.png'],
-    site: '@ceranco.tr',
-    creator: '@ceranco.tr',
+    site: '@cerancotr',
+    creator: '@cerancotr',
   },
 };
 

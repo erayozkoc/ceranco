@@ -26,7 +26,8 @@ export const metadata: Metadata = {
     title: 'Gizlilik Politikası | CeranCo',
     description: 'Veri güvenliği ve gizliliğe verdiğimiz önemi inceleyin.',
     images: ['https://ceranco.com.tr/assets/images/logo.png'],
-    creator: '@ceranco.tr',
+    creator: '@cerancotr',
+    site: '@cerancotr',
   },
 };
 

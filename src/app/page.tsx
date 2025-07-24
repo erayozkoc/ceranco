@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     title: 'CeranCo | Oversize Giyim',
     description: 'Cesur ol, kalıpları yık, tarzını yansıt. Yeni oversize koleksiyonlarla tanış.',
     images: ['https://ceranco.com.tr/assets/images/logo.png'],
-    site: '@ceranco.tr',
-    creator: '@ceranco.tr',
+    site: '@cerancotr',
+    creator: '@cerancotr',
   },
 };
 

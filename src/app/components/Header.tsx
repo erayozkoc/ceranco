@@ -82,7 +82,7 @@ export default function Header() {
             <p className="text-sm uppercase tracking-wide text-gray-400 text-center mb-3">Bizi Takip Et</p>
             <div className="flex justify-center gap-4 text-white">
               <a
-                href="https://instagram.com/ceranco"
+                href="https://instagram.com/ceranco.tr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -91,7 +91,7 @@ export default function Header() {
                 <FaInstagram className="w-5 h-5" />
               </a>
               <a
-                href="https://tiktok.com/@ceranco"
+                href="https://tiktok.com/@ceranco.tr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
@@ -100,7 +100,7 @@ export default function Header() {
                 <FaTiktok className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com/ceranco"
+                href="https://twitter.com/cerancotr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"

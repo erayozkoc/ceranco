@@ -50,22 +50,13 @@ export default function Footer() {
               <FaInstagram className="w-5 h-5 text-white" />
             </a>
             <a
-              href="https://twitter.com/ceranco.tr"
+              href="https://twitter.com/cerancotr"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand hover:bg-brand-dark transition rounded-full p-2"
               aria-label="Twitter"
             >
               <FaTwitter className="w-5 h-5 text-white" />
-            </a>
-            <a
-              href="https://facebook.com/ceranco.tr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-brand hover:bg-brand-dark transition rounded-full p-2"
-              aria-label="Facebook"
-            >
-              <FaFacebookF className="w-5 h-5 text-white" />
             </a>
             <a
               href="https://tiktok.com/@ceranco.tr"
