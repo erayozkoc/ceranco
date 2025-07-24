@@ -35,14 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <>
       <html lang="tr" suppressHydrationWarning>
         <body className={`${poppins.className} overflow-x-hidden bg-brand`}>
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-MV8JQQ7V"
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
-            ></iframe>
-          </noscript>
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV8JQQ7V"
+            height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
           <OrganizationStructuredData />
           <Header />
           {children}
